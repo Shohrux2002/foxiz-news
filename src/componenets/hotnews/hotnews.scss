@@ -1,0 +1,49 @@
+@import "../../sass/btn.scss";
+@import "../../sass/veribles.scss";
+
+.hotnews {
+  padding: 16px 20px;
+  background-color: $brColor;
+  color: $whiteColor;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  height: 22px;
+  align-items: center;
+  & h5 {
+    color: $whiteColor;
+  }
+  &-theme {
+    height: 22px;
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: inherit;
+    border-radius: 3px;
+    background-color: $backGraund;
+    & .svg-red {
+      color: $redColor;
+    }
+  }
+
+  &--slider {
+    justify-content: space-between;
+    display: flex;
+    gap: 100px;
+    & i {
+      font-size: 12px;
+      width: 12px;
+      &:hover {
+        color: $redColor;
+      }
+    }
+  }
+  &--categories {
+    display: flex;
+    gap: 10px;
+  }
+}

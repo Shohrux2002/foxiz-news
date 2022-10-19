@@ -1,0 +1,48 @@
+@import "./veribles.scss";
+
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.avatar {
+  gap: 10px;
+  align-items: center;
+  &--img {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+  }
+  &--name {
+    font-size: small;
+  }
+  &--date {
+    color: $backGraund;
+    border-right: 10px;
+    padding-right: 10px;
+  }
+}
+.rainbow {
+  display: flex;
+  gap: 2px;
+  & span {
+    width: 20px;
+    height: 7px;
+  }
+  & :nth-child(1) {
+    background-color: #cf2e2e;
+  }
+  & :nth-child(2) {
+    background-color: #ff6900;
+  }
+  & :nth-child(3) {
+    background-color: #fcb900;
+  }
+  & :nth-child(4) {
+    background-color: #7bdcb5;
+  }
+  & :nth-child(5) {
+    background-color: #00d084;
+  }
+}

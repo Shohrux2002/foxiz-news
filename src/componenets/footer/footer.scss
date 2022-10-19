@@ -1,0 +1,126 @@
+@import "../../sass/veribles.scss";
+.footer {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  gap: 0 25px;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 2fr 1fr 0.3fr;
+  background-color: $blackColor;
+  box-sizing: border-box;
+  &--signup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &-p {
+    font-size: 15px;
+    color: $whiteColor;
+  }
+  &--about {
+    color: $whiteColor;
+  }
+  &--quicklink {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+  &-form {
+    display: flex;
+    gap: 5px;
+  }
+  &--input {
+    padding: 10px 20px;
+    background-color: #88888840;
+    border: none;
+    color: #fff;
+    outline-style: none;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 230px;
+  }
+  &--logo {
+    width: auto;
+    height: 80px;
+    & img {
+      height: 80px;
+    }
+  }
+  &--bottom {
+    height: 80px;
+    padding: 15px 0;
+    grid-column: 1 / 5;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    &__right {
+      color: $whiteColor;
+      display: flex;
+      gap: 5px;
+      & h3 {
+        border-right: 1px solid $whiteColor;
+        width: 100px;
+      }
+    }
+  }
+
+  & h4 {
+    width: 100%;
+    margin-right: 50px;
+
+    &::first-letter {
+      background-color: $redColor;
+      padding: 3px;
+    }
+  }
+}
+.footer-h1 {
+  color: $whiteColor;
+  margin-bottom: 10px;
+  font-size: 64px;
+  font-weight: bold;
+}
+.footer-img:after {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 20%;
+  height: 50%;
+  content: "";
+  opacity: 0.2;
+  background-image: radial-gradient(
+    var(--body-fcolor) 0.75px,
+    transparent 0.75px
+  );
+  background-size: 16px 16px;
+}
+.check-box-label {
+  color: $whiteColor;
+}
+.check {
+  display: flex;
+  gap: 5px;
+}
+.copyright-inner {
+  border-top: 1px solid #88888840;
+  padding: 10px 0;
+  display: flex;
+  grid-column: 1/5;
+  justify-content: space-between;
+  color: #88888840;
+  & ul {
+    display: flex;
+    gap: 20px;
+    list-style: square;
+    text-decoration: none;
+    color: $whiteColor;
+    & :first-child {
+      list-style: none;
+    }
+  }
+}

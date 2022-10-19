@@ -1,0 +1,123 @@
+@import "../../sass/veribles.scss";
+@import "../../sass/btn.scss";
+.top-img {
+  width: 100vw;
+  height: 170px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+}
+.navbar {
+  position: static;
+  top: 0;
+  left: 0;
+  box-shadow: 80px 0 80px #00000080;
+
+  padding: 10px 20px;
+  width: 100%;
+  height: 60px;
+  background-color: $blackColor;
+  margin-top: 170px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  &--left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    &__menu {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  &--right {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+}
+.logo-dark {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: $whiteColor;
+  font-weight: bold;
+  font-size: large;
+  font-family: "PT sans", sans-serif;
+}
+.noti {
+  font-size: 48px;
+}
+.navbar i {
+  color: $whiteColor;
+  font-size: 10px;
+}
+.home {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.bottom-line {
+  position: absolute;
+  background-color: #cf2e2e;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+}
+
+.navbar a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 4px #cf2e2e;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.navbar a:hover:after {
+  transform: scaleX(1);
+}
+.navbar a.fromRight:after {
+  transform-origin: 100% 50%;
+}
+.navbar a.fromLeft:after {
+  transform-origin: 0% 50%;
+}
+.more {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 5px;
+  transition: transform 250ms ease-in-out;
+  :hover > div {
+    margin: 1px 0;
+  }
+}
+.more div {
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  background-color: $whiteColor;
+}
+.navbar--right i {
+  font-size: 20px;
+}
+.navbar--right .btn-red {
+  margin-right: 10px;
+}
+.fi-bell {
+  position: relative;
+}
+.noti {
+  position: absolute;
+  background-color: #cf2e2e;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: -2px;
+  right: 0;
+}
